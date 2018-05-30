@@ -13,7 +13,7 @@
 import { Button, Constants } from  "@crpt/crpt-react-library";
 
 
-<Button onClick={e => console.log('clicked!'} size={Constants.BUTTON_SIZES.normal} />
+<Button onClick={e => console.log('clicked!')} size={Constants.BUTTON_SIZES.normal} />
 
 ```
 
