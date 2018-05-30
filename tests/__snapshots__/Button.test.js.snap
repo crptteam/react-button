@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Should renders without problems 1`] = `
+<ButtonWrap
+  innerRef={[Function]}
+  onClick={[Function]}
+  size="normal"
+  theme={
+    Object {
+      "borderRadius": "2px",
+      "disabled": Object {
+        "background": "rgba(0,0,0,0)",
+        "border": "1px solid #ABADB6",
+        "color": "#ABADB6",
+      },
+      "fontSize": "14px",
+      "fontWeight": 400,
+      "large": Object {
+        "height": "48px",
+        "paddingLeft": "24px",
+        "paddingRight": "24px",
+      },
+      "main": Object {
+        "background": "rgba(0,0,0,0)",
+        "border": "1px solid #1A99F4",
+        "color": "#1A99F4",
+      },
+      "minWidth": "108px",
+      "normal": Object {
+        "height": "32px",
+        "paddingLeft": "16px",
+        "paddingRight": "16px",
+      },
+    }
+  }
+  type="button"
+>
+  Click me
+</ButtonWrap>
+`;
