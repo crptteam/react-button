@@ -1,5 +1,9 @@
 # Button
 
+[![Travis][build-badge]][build]
+[![npm package][npm-badge]][npm]
+[![Coveralls][coveralls-badge]][coveralls]
+
 Компонент кнопки.
 
 ## Usage
@@ -22,3 +26,11 @@ import { Button, Constants } from  "@crpt/crpt-react-library";
 | size: String | Размер кнопки, список всех размеров находится в Constants.BUTTON_SIZES. | &lt;Button size={Constants.BUTTON_SIZES.large} /> |
 | link: Boolean | Превращает кнопку в ссылку, у которой есть атрибуты href и target. | &lt;Button link href="https://google.com/" target="_blank" /> |
 
+[build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
+[build]: https://travis-ci.org/user/repo
+
+[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
+[npm]: https://www.npmjs.org/package/npm-package
+
+[coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
+[coveralls]: https://coveralls.io/github/user/repo
