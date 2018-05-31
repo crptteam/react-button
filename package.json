@@ -1,7 +1,7 @@
 {
-  "name": "@crpt/react-form",
+  "name": "@crpt/react-button",
   "version": "1.0.0",
-  "description": "react-form React component",
+  "description": "react-button React component",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": ["css", "es", "lib", "umd"],
