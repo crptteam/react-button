@@ -35,10 +35,16 @@ const Elem = styled.a`
 `;
 
 const LinkWrap = props => {
+  const merged = Object.assign(
+    {},
+    defaultTheme.Button,
+    props.theme && props.theme.Button ? props.theme.Button : {}
+  );
+
   const theme = getThemeAsPlainTextByKeys(
-    props.theme || defaultTheme,
-    props.disabled ? 'disabled' : 'main',
-    props.size || 'normal'
+    merged,
+    props.disabled ? "disabled" : "main",
+    props.size || "normal"
   );
 
   return <Elem {...theme} {...props} />;
