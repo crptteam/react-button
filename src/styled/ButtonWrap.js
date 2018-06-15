@@ -11,7 +11,7 @@ const Elem = styled.button`
   outline: 0;
   align-items: center;
   justify-content: center;
-  border-radius: 2px;
+  border-radius: ${props => props.borderRadius};
   white-space: nowrap;
   padding-left: ${props => props.paddingLeft};
   padding-right: ${props => props.paddingRight};
@@ -37,6 +37,8 @@ const ButtonWrap = props => {
     defaultTheme.Button,
     props.theme && props.theme.Button ? props.theme.Button : {}
   );
+
+  console.log('merged', merged);
 
   const theme = getThemeAsPlainTextByKeys(
     merged,
