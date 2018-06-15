@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import styled, { withTheme } from "styled-components";
 
-import ButtonWrap from '../styled/ButtonWrap';
-import LinkWrap from '../styled/LinkWrap';
+import ButtonWrap from "../styled/ButtonWrap";
+import LinkWrap from "../styled/LinkWrap";
 
-import { SIZES } from '../constants';
-import { defaultTheme } from '../theme/';
+import { SIZES } from "../constants";
+import { defaultTheme } from "../theme/";
 
 class Button extends Component {
   buttonElem;
@@ -29,7 +29,7 @@ class Button extends Component {
       <Wrap
         innerRef={el => (this.buttonElem = el)}
         theme={theme}
-        type={type || 'button'}
+        type={type || "button"}
         onClick={this.onClick}
         disabled={disabled}
         size={size}
@@ -55,6 +55,6 @@ Button.defaultProps = {
   link: false
 };
 
-Button.displayName = 'Button';
+Button.displayName = "Button";
 
-export default Button;
+export default withTheme(Button);
