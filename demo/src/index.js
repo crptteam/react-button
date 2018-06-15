@@ -8,12 +8,18 @@ const WButton = withTheme(Button);
 
 const Pure = props => <div>123123312</div>;
 
+const theme = {
+  Button: {
+    borderRadius: '50%'
+  }
+};
+
 class Demo extends Component {
   render() {
     return (
       <div>
         <h1>Button</h1>
-        <ThemeProvider theme={themes.filledTheme}>
+        <ThemeProvider theme={theme}>
           <div>
             <WButton>
               <Pure />
