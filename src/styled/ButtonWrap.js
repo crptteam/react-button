@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import { getThemeAsPlainTextByKeys } from "../utils";
+import { getThemeAsPlainTextByKeys, innerMerge } from "../utils";
 import defaultTheme from "../theme/defaultTheme";
 
 const Elem = styled.button`
@@ -32,7 +32,7 @@ const Elem = styled.button`
 `;
 
 const ButtonWrap = props => {
-  const merged = Object.assign(
+  const merged = innerMerge(
     {},
     defaultTheme.Button,
     props.theme && props.theme.Button ? props.theme.Button : {}
