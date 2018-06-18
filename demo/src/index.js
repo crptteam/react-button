@@ -10,7 +10,7 @@ const Pure = props => <div>123123312</div>;
 
 const theme = {
   Button: {
-    borderRadius: '50%'
+
   }
 };
 
@@ -25,7 +25,7 @@ class Demo extends Component {
               <Pure />
             </WButton>
             <WButton theme={themes.defaultTheme}>Press me</WButton>
-            <WButton>Press me</WButton>
+            <WButton action="collapse">Press me</WButton>
             <WButton>Press me</WButton>
           </div>
         </ThemeProvider>
