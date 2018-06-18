@@ -38,8 +38,6 @@ const ButtonWrap = props => {
     props.theme && props.theme.Button ? props.theme.Button : {}
   );
 
-  console.log('merged', merged);
-
   const theme = getThemeAsPlainTextByKeys(
     merged,
     props.disabled ? "disabled" : "main",
