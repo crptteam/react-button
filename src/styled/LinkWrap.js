@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import { getThemeAsPlainTextByKeys } from '../utils';
+import { getThemeAsPlainTextByKeys, innerMerge } from '../utils';
 import defaultTheme from '../theme/defaultTheme';
 
 const Elem = styled.a`
@@ -35,7 +35,7 @@ const Elem = styled.a`
 `;
 
 const LinkWrap = props => {
-  const merged = Object.assign(
+  const merged = innerMerge(
     {},
     defaultTheme.Button,
     props.theme && props.theme.Button ? props.theme.Button : {}

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import styled, { withTheme } from "styled-components";
+import { withTheme } from "styled-components";
 
 import ButtonWrap from "../styled/ButtonWrap";
 import LinkWrap from "../styled/LinkWrap";
