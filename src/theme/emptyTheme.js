@@ -23,6 +23,9 @@ export default {
       background: "rgba(0,0,0,0)"
     },
     minWidth: "108px",
-    borderRadius: "2px"
+    borderTopLeftRadius: "2px",
+    borderBottomLeftRadius: "2px",
+    borderTopRightRadius: "2px",
+    borderBottomRightRadius: "2px"
   }
 };
