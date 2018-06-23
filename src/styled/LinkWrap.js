@@ -17,7 +17,10 @@ const Elem = styled.a`
   white-space: nowrap;
   padding-left: ${props => props.paddingLeft};
   padding-right: ${props => props.paddingRight};
-  border-radius: ${props => props.borderRadius};
+  border-top-left-radius: ${props => props.borderTopLeftRadius};
+  border-top-right-radius: ${props => props.borderTopRightRadius};
+  border-bottom-left-radius: ${props => props.borderBottomLeftRadius};
+  border-bottom-right-radius: ${props => props.borderBottomRightRadius};
   border: ${props => props.border};
   background: ${props => props.background};
   color: ${props => props.color};

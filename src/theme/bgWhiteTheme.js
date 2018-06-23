@@ -23,6 +23,9 @@ export default {
       background: "#ffffff"
     },
     minWidth: "108px",
-    borderRadius: "2px"
+    borderTopLeftRadius: "2px",
+    borderBottomLeftRadius: "2px",
+    borderTopRightRadius: "2px",
+    borderBottomRightRadius: "2px"
   }
 };

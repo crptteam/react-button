@@ -11,7 +11,10 @@ const Elem = styled.button`
   outline: 0;
   align-items: center;
   justify-content: center;
-  border-radius: ${props => props.borderRadius};
+  border-top-left-radius: ${props => props.borderTopLeftRadius};
+  border-top-right-radius: ${props => props.borderTopRightRadius};
+  border-bottom-left-radius: ${props => props.borderBottomLeftRadius};
+  border-bottom-right-radius: ${props => props.borderBottomRightRadius};
   white-space: nowrap;
   padding-left: ${props => props.paddingLeft};
   padding-right: ${props => props.paddingRight};

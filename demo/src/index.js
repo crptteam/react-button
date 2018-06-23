@@ -10,7 +10,7 @@ const Pure = props => <div>123123312</div>;
 
 const theme = {
   Button: {
-
+    borderTopLeftRadius: "15px"
   }
 };
 
