@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
+import React, { Component } from "react";
+import styled from "styled-components";
 
-import { getThemeAsPlainTextByKeys, innerMerge } from '../utils';
-import defaultTheme from '../theme/defaultTheme';
+import { getThemeAsPlainTextByKeys, innerMerge } from "../utils";
+import defaultTheme from "../theme/defaultTheme";
 
 const Elem = styled.a`
   -webkit-appearance: none !important;
@@ -30,8 +30,9 @@ const Elem = styled.a`
   font-weight: ${props => props.fontWeight};
   box-sizing: border-box;
   min-width: ${props => props.minWidth};
-  cursor: ${props => (props.disabled ? 'not-allowed !important' : 'pointer')};
-  margin-right: ${props => (props.marginRight ? props.marginRight + 'px' : 0)};
+  cursor: ${props => (props.disabled ? "not-allowed !important" : "pointer")};
+  margin-right: ${props => (props.marginRight ? props.marginRight + "px" : 0)};
+  box-shadow: ${props => props.boxShadow};
   :hover {
     color: ${props => props.color};
   }
