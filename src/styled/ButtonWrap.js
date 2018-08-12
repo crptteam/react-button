@@ -26,6 +26,7 @@ const Elem = styled.button`
   font-size: ${props => props.fontSize};
   font-weight: ${props => props.fontWeight};
   box-sizing: border-box;
+  box-shadow: ${props => props.boxShadow};
   min-width: ${props => props.minWidth};
   cursor: ${props =>
     props.disabled
