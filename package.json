@@ -23,6 +23,8 @@
     "test:watch": "NODE_ENV=test jest --watch"
   },
   "dependencies": {
+    "@crpt/react-utils": "0.0.72",
+    "lodash": "^4.17.10",
     "styled-components": "1.4.6 - 3"
   },
   "peerDependencies": {

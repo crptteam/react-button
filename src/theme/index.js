@@ -1,4 +1,4 @@
-import defaultTheme from './defaultTheme.js';
+import defaultTheme from './defaultTheme';
 import filledTheme from './filledTheme';
 import emptyTheme from './emptyTheme';
 import whiteTheme from './whiteTheme';

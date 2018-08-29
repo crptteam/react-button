@@ -8,7 +8,7 @@ import LinkWrap from "../styled/LinkWrap";
 import { SIZES } from "../constants";
 import { defaultTheme } from "../theme/";
 
-class Button extends Component {
+class Button_old extends Component {
   buttonElem;
 
   constructor(props) {
@@ -39,7 +39,7 @@ class Button extends Component {
   }
 }
 
-Button.propTypes = {
+Button_old.propTypes = {
   className: PropTypes.string,
   theme: PropTypes.object,
   onClick: PropTypes.func,
@@ -49,12 +49,12 @@ Button.propTypes = {
   size: PropTypes.oneOf(Object.keys(SIZES))
 };
 
-Button.defaultProps = {
+Button_old.defaultProps = {
   theme: defaultTheme,
   size: SIZES.normal,
   link: false
 };
 
-Button.displayName = "Button";
+Button_old.displayName = "Button";
 
-export default withTheme(Button);
+export default withTheme(Button_old);

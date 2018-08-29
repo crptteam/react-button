@@ -1,11 +1,12 @@
-import Button from "./components/Button";
-import {SIZES} from "./constants";
-import * as themes from "./theme";
+import { Button } from './components';
+
+import {
+  render,
+} from './lib';
 
 export {
+  // components
   Button,
-  SIZES,
-  themes
+  // lib
+  render,
 };
-
-export default Button;

@@ -1,8 +1,8 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-import { getThemeAsPlainTextByKeys, innerMerge } from "../utils";
-import defaultTheme from "../theme/defaultTheme";
+import { getThemeAsPlainTextByKeys, innerMerge } from '../utils';
+import defaultTheme from '../theme/defaultTheme';
 
 const Elem = styled.button`
   js-display: inline-flex;
@@ -28,14 +28,13 @@ const Elem = styled.button`
   box-sizing: border-box;
   box-shadow: ${props => props.boxShadow};
   min-width: ${props => props.minWidth};
-  cursor: ${props =>
-    props.disabled
-      ? "not-allowed !important"
-      : props.cursor ? props.cursor : "pointer"};
-  margin-right: ${props => (props.marginRight ? props.marginRight + "px" : 0)};
+  cursor: ${props => (props.disabled
+    ? 'not-allowed !important'
+    : props.cursor ? props.cursor : 'pointer')};
+  margin-right: ${props => (props.marginRight ? `${props.marginRight}px` : 0)};
 `;
 
-const ButtonWrap = props => {
+const ButtonWrap = (props) => {
   const merged = innerMerge(
     {},
     defaultTheme.Button,
@@ -44,8 +43,8 @@ const ButtonWrap = props => {
 
   const theme = getThemeAsPlainTextByKeys(
     merged,
-    props.disabled ? "disabled" : "main",
-    props.size || "normal"
+    props.disabled ? 'disabled' : 'main',
+    props.size || 'normal'
   );
 
   return <Elem {...theme} {...props} />;
