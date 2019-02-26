@@ -26,6 +26,6 @@ export default {
     borderTopLeftRadius: "2px",
     borderBottomLeftRadius: "2px",
     borderTopRightRadius: "2px",
-    borderBottomRightRadius: "2px"
+    borderBottomRightRadius: "2px",
   }
 };

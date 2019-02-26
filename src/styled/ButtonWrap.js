@@ -33,6 +33,18 @@ const Elem = styled.button`
       ? "not-allowed !important"
       : props.cursor ? props.cursor : "pointer"};
   margin-right: ${props => (props.marginRight ? props.marginRight + "px" : 0)};
+  :hover {
+    color: ${props => props.hoverColor};
+    background: ${props => props.hoverBackground};
+    box-shadow: ${props => props.hoverBoxShadow};
+    border-top-left-radius: ${props => props.hoverBorderTopLeftRadius};
+    border-top-right-radius: ${props => props.hoverBorderTopRightRadius};
+    border-bottom-left-radius: ${props => props.hoverBorderBottomLeftRadius};
+    border-bottom-right-radius: ${props => props.hoverBorderBottomRightRadius};
+    padding-left: ${props => props.hoverPaddingLeft};
+    padding-right: ${props => props.hoverPaddingRight};
+    border: ${props => props.hoverBorder};
+  }
 `;
 
 const ButtonWrap = props => {
